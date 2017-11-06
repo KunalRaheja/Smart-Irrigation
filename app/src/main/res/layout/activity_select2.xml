@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:focusableInTouchMode="true"
+    android:background="#efefef">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Control Area"
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.85"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Controls"
+            android:id="@+id/bt_ctrl"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="normal|italic"
+            android:enabled="true"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.05"></LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="view"
+            android:id="@+id/bt_view"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Water Saved With Smart Irrigation : 300L"
+            android:id="@+id/textView3"
+            android:paddingLeft="20dp"
+            android:textColor="#202020"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Water Used Without Smart Irrigation : 1200L"
+            android:id="@+id/textView4"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#202020" />
+    </LinearLayout>
+
+</LinearLayout>
